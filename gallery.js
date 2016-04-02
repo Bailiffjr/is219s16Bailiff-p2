@@ -34,7 +34,7 @@ function animate() {
 
 function swapPhoto() {
 	//Add code here to access the #slideShow element.
-	
+	$('#slidShow').photoholder().img().src = mImages[0].Path;
 	//Access the img element and replace its source
 	//with a new image from your images array which is loaded 
 	//from the JSON string
@@ -67,7 +67,7 @@ mRequest.onreadystatechange = function() {
 			// LOOP THROUGH the mJSON array here and fill up the 
 			// mImages array with GalleryImage objects
 			for(var x = 0; x > mJason.images.length;x++){
-				myArray[].push(new GalleryImage(mJson.images[x].imgLocation,mJson.images[x].description, mJson.images[x].date, mJson.images[x].imgPath));
+				mImages[].push(new GalleryImage(mJson.images[x].imgLocation,mJson.images[x].description, mJson.images[x].date, mJson.images[x].imgPath));
 			}
 			// Let’s print out the JSON; It will likely show as “obj” 
 			console.log(mJson); 
