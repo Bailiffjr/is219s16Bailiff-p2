@@ -66,9 +66,9 @@ mRequest.onreadystatechange = function() {
 			mJson = JSON.parse(mRequest.responseText);
 			// LOOP THROUGH the mJSON array here and fill up the 
 			// mImages array with GalleryImage objects
-			
-			myArray[].push(new GalleryImage("Dog", "Boar", "Rat", "Ox"));
-			
+			for(var x = 0; x > mJason.images.length;x++){
+				myArray[].push(new GalleryImage(mJson.images[x].imgLocation,mJson.images[x].description, mJson.images[x].date, mJson.images[x].imgPath));
+			}
 			// Let’s print out the JSON; It will likely show as “obj” 
 			console.log(mJson); 
 		} catch(err) { 
@@ -99,13 +99,15 @@ window.addEventListener('load', function() {
 
 }, false);
 
-function GalleryImage() {
+function GalleryImage(Location , Description, ImgDate, Path) {
 	//implement me as an object to hold the following data about an image:
 	//1. location where photo was taken
-	this.location = mImages.location;
+	this.location = Location;
 	//2. description of photo
-	this.description = mImages.description;
+	this.description = Description;
 	//3. the date when the photo was taken
-	this.date = mIages.date;
+	this.date = ImgDate;
 	//4. either a String (src URL) or an an HTMLImageObject (bitmap of the photo. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)
+	this.img = Path;
+	
 }
