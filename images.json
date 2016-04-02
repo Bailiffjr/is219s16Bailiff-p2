@@ -1,19 +1,19 @@
 {
     "images": [
         {
-            "imgPath": "img/places/australia.jpg",
+            "imgPath": "australia.jpg",
             "imgLocation": "Australia",
             "description": "Loch Ard Gorge",
             "date": "01/01/2016"
         },
         {
-            "imgPath": "img/places/austria.jpg",
+            "imgPath": "austria.jpg",
             "imgLocation": "Austria",
             "description": "Austrian chapel",
             "date": "01/02/2016"
         },
         {
-            "imgPath": "img/places/france.jpg",
+            "imgPath": "france.jpg",
             "imgLocation": "Paris",
             "description": "Eiffel Tower",
             "date": "01/03/2016"
