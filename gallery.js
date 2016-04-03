@@ -57,14 +57,14 @@ var mJson;
 
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
-var mUrl = "images.json";
+var mUrl = 'images.json';
 try{
 mJson = JSON.parse(mRequest.responseText);
 }
 catch{
 	
 }
-mRequest.open("GET",mUrl, true); 
+mRequest.open('GET',mUrl, true); 
 mRequest.send();
 console.log(mJson); 
 
