@@ -59,7 +59,7 @@ var mJson;
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
 var mUrl = "images.json";
 
-mRequest2.onreadystatechange = function() { 
+mRequest.onreadystatechange = function() { 
 	// Do something interesting if file is opened successfully 
 	if (mRequest.readyState == 4 && mRequest.status == 200) {
 		try { 
@@ -73,7 +73,7 @@ mRequest2.onreadystatechange = function() {
 			// Let’s print out the JSON; It will likely show as “obj” 
 			console.log(mJson); 
 		} catch(err) { 
-			console.log(err.message) 
+		//	console.log(err.message) 
 		} 
 	} 
 };
