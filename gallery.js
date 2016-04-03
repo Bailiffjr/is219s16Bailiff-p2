@@ -61,6 +61,28 @@ var mUrl = "images.json";
 
 
 
+mRequest.onreadystatechange = function() { 
+	// Do something interesting if file is opened successfully 
+	if (mRequest.readyState == 4 && mRequest.status == 200) {
+		try { 
+			// Let’s try and see if we can parse JSON (see next slide)
+			mJson = JSON.parse(mRequest.responseText);
+			// LOOP THROUGH the mJSON array here and fill up the 
+			// mImages array with GalleryImage objects
+			for(var x = 0; x > mJason.images.length;x++){
+				mImages[].push(new GalleryImage(mJson.images[x].imgLocation,mJson.images[x].description, mJson.images[x].date, mJson.images[x].imgPath));
+			}
+			// Let’s print out the JSON; It will likely show as “obj” 
+			console.log(mJson); 
+		} catch(err) { 
+		//	console.log(err.message) 
+		} 
+	} 
+};
+
+mRequest.open("GET",mURL, true); 
+mRequest.send();
+
 
 //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
 //@param A GalleryImage object. Use this method for an event handler for loading a gallery Image object (optional).
