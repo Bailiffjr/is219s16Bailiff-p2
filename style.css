@@ -57,7 +57,6 @@ body {
 }
 
 #prevPhoto {
-	transform: rotate(180deg);
 	height: 42px;
 	width: 42px;
 }
