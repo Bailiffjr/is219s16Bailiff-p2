@@ -35,7 +35,16 @@ function animate() {
 function swapPhoto() {
 	//Add code here to access the #slideShow element.
 	
-	$('#slidShow').children('photo').attr('src',mImages[0].img);
+	if (mCurrentIndex < 0){
+		mCurrentIndex = mImages.length - 1;
+		$('#photo').attr('src',mImages[mCurrentIndex].img);
+	}else if(mCurrentIndex < mImages.length){
+		$('#photo').attr('src',mImages[mCurrentIndex].img);
+	}else{
+		mCurrentIndex = 0;
+		$('#photo').attr('src',mImages[mCurrentIndex].img);
+	}	
+	
 	//Access the img element and replace its source
 	//with a new image from your images array which is loaded 
 	//from the JSON string
@@ -58,8 +67,6 @@ var mJson;
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
 var mUrl = "images.json";
-
-
 
 mRequest.onreadystatechange = function() { 
 	// Do something interesting if file is opened successfully 
