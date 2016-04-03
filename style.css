@@ -32,11 +32,9 @@ body {
 	height: 50px;
 	width: 50px;
 	position: relative;
-	left:40%;
+	left:45%;
 	z-index: 3;
 	opacity: .8;
-	bottom: 15%;
-	margin: 0 auto;
 }
 
 .thumbnail {
