@@ -118,7 +118,7 @@ window.addEventListener('load', function() {
 }, false);
 
 $('img#moreIndicator').click (function() {
-  $('.details').slideToggle("slow");
+  $('.details').eq(0).slideToggle("slow");
 });
 
 function GalleryImage(location , description, date, img) {
