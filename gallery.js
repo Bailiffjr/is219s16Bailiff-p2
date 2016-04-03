@@ -117,7 +117,7 @@ window.addEventListener('load', function() {
 
 }, false);
 
-$( ".moreIndicator" ).click(function() {
+$( '#moreIndicator' ).click(function() {
   $('.details').eq(0).toggle();
 });
 
