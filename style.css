@@ -32,6 +32,8 @@ body {
 	height: 50px;
 	width: 50px;
 	position: absolute;
+	right:25%;
+    	left:50%;
 	z-index: 3;
 	opacity: .8;
 	top: 0px;
