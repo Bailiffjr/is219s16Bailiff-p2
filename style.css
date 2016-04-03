@@ -34,8 +34,9 @@ body {
 	position: relative;
 	z-index: 3;
 	opacity: .8;
-	top:10%;
-	margin: 0 auto;
+	top:50%; 
+    	left:50%;
+	margin: auto;
 }
 
 .thumbnail {
