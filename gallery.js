@@ -79,7 +79,7 @@ mRequest.onreadystatechange = function() {
 		} 
 	} 
 };
-mRequest.open('GET',mUrl, true); 
+mRequest.open("GET",mUrl, true); 
 mRequest.send();
 
 //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
