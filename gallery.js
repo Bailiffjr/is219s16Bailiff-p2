@@ -53,9 +53,9 @@ function swapPhoto() {
 }
 
 function setDetails(){
-	$('.details').attr('location','Location: ' + mImages[mCurrentIndex].location)
-	$('.details').attr('location','Description: ' + mImages[mCurrentIndex].description)
-	$('.details').attr('location','Date: ' + mImages[mCurrentIndex].date)
+	$('#details').attr('location','Location: ' + mImages[mCurrentIndex].location)
+	$('#details').attr('description','Description: ' + mImages[mCurrentIndex].description)
+	$('#details').attr('date','Date: ' + mImages[mCurrentIndex].date)
 }
 
 // Counter for the mImages array
