@@ -35,8 +35,8 @@ body {
 	z-index: 3;
 	opacity: .8;
 	margin: auto;
-	bottom:50%;
-	align: center;
+	bottom:25%;
+	right:45%;
 }
 
 .thumbnail {
