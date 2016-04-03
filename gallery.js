@@ -34,7 +34,7 @@ function animate() {
 
 function swapPhoto() {
 	//Add code here to access the #slideShow element.
-	
+	mCurrentIndex += 1;
 	if (mCurrentIndex < 0){
 		mCurrentIndex = mImages.length - 1;
 		$('#photo').attr('src',mImages[mCurrentIndex].img);
