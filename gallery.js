@@ -117,7 +117,7 @@ window.addEventListener('load', function() {
 
 }, false);
 
-$('img.moreIndicator').click (function() {
+$('img#moreIndicator').click (function() {
   $('.details').slideToggle("slow");
 });
 
