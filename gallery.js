@@ -107,9 +107,9 @@ $(document).ready( function() {
 	
 	// This initially hides the photos' metadata information
 //	$('.details').eq(0).hide();
-	$('.moreIndicator').click (function() {
-  $('.details').eq(0).slideToggle("slow");
-});
+//	$('.moreIndicator').click (function() {
+//  $('.details').eq(0).slideToggle("slow");
+//});
 
 	
 });
