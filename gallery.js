@@ -74,7 +74,7 @@ mRequest.onreadystatechange = function() {
 		//		console.log(mImages[x].img);
 	//		}
 			// Let’s print out the JSON; It will likely show as “obj” 
-			console.log(mJson); 
+			console.log(mJson.images.length; 
 		} catch(err) { 
 		//	console.log(err.message) 
 		} 
