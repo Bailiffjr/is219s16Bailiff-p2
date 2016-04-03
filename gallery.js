@@ -35,7 +35,7 @@ function animate() {
 function swapPhoto() {
 	//Add code here to access the #slideShow element.
 	
-	$('#photo').attr('src',mImages[0].img);
+	$('#photo').attr('src',mImages[0].img.toString());
 	//Access the img element and replace its source
 	//with a new image from your images array which is loaded 
 	//from the JSON string
