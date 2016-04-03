@@ -120,9 +120,9 @@ window.addEventListener('load', function() {
 
 }, false);
 
-//$('.moreIndicator').click (function() {
-//  $('.details').eq(0).slideToggle("slow");
-//});
+$('.moreIndicator').click (function() {
+  $('.details').eq(0).slideToggle("slow");
+});
 
 function GalleryImage(location , description, date, img) {
 	//implement me as an object to hold the following data about an image:
