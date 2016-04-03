@@ -59,7 +59,7 @@ var mJson;
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
 var mUrl = "images.json";
 
-mRequest.open("GET",mURL, true); 
+mRequest.open("GET",mUrl, true); 
 mRequest.send();
 
 mRequest.onreadystatechange = function() { 
