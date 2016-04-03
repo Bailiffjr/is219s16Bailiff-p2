@@ -35,7 +35,7 @@ function animate() {
 function swapPhoto() {
 	//Add code here to access the #slideShow element.
 	//$('.thumbnail').$("src").text(mImages[0].Path);
-	$(".photo").attr("src","australia.jpg");
+	$("#photo").attr("src","australia.jpg");
 	//Access the img element and replace its source
 	//with a new image from your images array which is loaded 
 	//from the JSON string
@@ -102,15 +102,15 @@ window.addEventListener('load', function() {
 
 }, false);
 
-function GalleryImage(Location , Description, ImgDate, Path) {
+function GalleryImage(location , Description, date, img) {
 	//implement me as an object to hold the following data about an image:
 	//1. location where photo was taken
-	this.location = Location;
+	this.location = location;
 	//2. description of photo
-	this.description = Description;
+	this.description = description;
 	//3. the date when the photo was taken
-	this.date = ImgDate;
+	this.date = date;
 	//4. either a String (src URL) or an an HTMLImageObject (bitmap of the photo. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)
-	this.img = Path;
+	this.img = img;
 	
 }
