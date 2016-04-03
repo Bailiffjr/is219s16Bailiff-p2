@@ -120,7 +120,7 @@ window.addEventListener('load', function() {
 
 }, false);
 
-$('img#moreIndicator').click (function() {
+$('#moreIndicator').click (function() {
   $('.details').eq(0).slideToggle("slow");
 });
 
