@@ -35,7 +35,7 @@ function animate() {
 function swapPhoto() {
 	//Add code here to access the #slideShow element.
 	
-	$('#photo').attr('src','australia.jpg');
+	$('#photo').attr('src',mImages.img);
 	//Access the img element and replace its source
 	//with a new image from your images array which is loaded 
 	//from the JSON string
@@ -69,9 +69,9 @@ mRequest.onreadystatechange = function() {
 			mJson = JSON.parse(mRequest.responseText);
 			// LOOP THROUGH the mJSON array here and fill up the 
 			// mImages array with GalleryImage objects
-		//	for(var x = 0; x > mJson.images.length;x++){
-		//		mImages[].push(new GalleryImage(mJson.images[x].imgLocation,mJson.images[x].description, mJson.images[x].date, mJson.images[x].imgPath));
-		//	}
+			for(var x = 0; x > mJson.images.length;x++){
+				mImages[].push(new GalleryImage(mJson.images[x].imgLocation,mJson.images[x].description, mJson.images[x].date, mJson.images[x].imgPath));
+			}
 			// Let’s print out the JSON; It will likely show as “obj” 
 			console.log(mJson); 
 		} catch(err) { 
