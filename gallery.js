@@ -66,7 +66,7 @@ mRequest.onreadystatechange = function() {
 	if (mRequest.readyState == 4 && mRequest.status == 200) {
 		try { 
 			// Let’s try and see if we can parse JSON (see next slide)
-			mJson = JSON.parse(mRequest.responseXML);
+			mJson = JSON.parse(mRequest.responseText);
 			// LOOP THROUGH the mJSON array here and fill up the 
 			// mImages array with GalleryImage objects
 		//	for(var x = 0; x > mJson.images.length;x++){
