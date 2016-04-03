@@ -60,6 +60,9 @@ body {
 	height: 42px;
 	width: 42px;
 }
+#prevPhoto:hover{
+	opacity: .8;
+}
 
 #nextPhoto {
 	position: absolute;
@@ -68,6 +71,9 @@ body {
 	margin: 0 auto;
 	bottom:0px;
 	right: 0px;
+}
+#nextPhoto:hover{
+	opacity: .8;
 }
 
 .details p {
