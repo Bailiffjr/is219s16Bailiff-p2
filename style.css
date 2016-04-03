@@ -61,7 +61,7 @@ body {
 }
 
 #nextPhoto {
-	position: relative;
+	position: absolute;
 	height: 42px;
 	width: 42px;
 	margin: 0 auto;
