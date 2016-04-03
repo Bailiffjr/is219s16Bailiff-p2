@@ -58,23 +58,8 @@ var mJson;
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
 var mUrl = "images.json";
- 
- 
-		try { 
-			// Let’s try and see if we can parse JSON (see next slide)
-			mJson = JSON.parse(mRequest.responseText);
-			// LOOP THROUGH the mJSON array here and fill up the 
-			// mImages array with GalleryImage objects
-			for(var x = 0; x < mJson.images.length;x++){
-				mImages[].push(new GalleryImage(mJson.images[x].imgLocation,mJson.images[x].description, mJson.images[x].date, mJson.images[x].imgPath));
-			}
-			// Let’s print out the JSON; It will likely show as “obj” 
-			console.log(mJson); 
-		} catch(err) { 
-		//	console.log(err.message) 
-		} 
 
-
+mJson = JSON.parse(mRequest.responseText);
 
 mRequest.open("GET",mUrl, true); 
 mRequest.send();
