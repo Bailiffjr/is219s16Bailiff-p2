@@ -35,7 +35,7 @@ body {
 	z-index: 3;
 	opacity: .8;
 	left: 50%;
-	margin: 0 auto;
+	margin: auto;
 	bottom:20%;
 }
 
