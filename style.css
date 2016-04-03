@@ -31,12 +31,13 @@ body {
 .moreIndicator {
 	height: 50px;
 	width: 50px;
-	position: relative;
+	position: absolute;
 	z-index: 3;
 	opacity: .8;
+	right:50%;
 	margin: auto;
 	bottom:20%;
-	text-align: center;
+	
 }
 
 .thumbnail {
