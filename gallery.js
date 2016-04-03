@@ -102,6 +102,7 @@ $(document).ready( function() {
 	
 	// This initially hides the photos' metadata information
 	$('.details').eq(0).hide();
+	$('#photo').attr('src',mImages[mCurrentIndex + 1].img);
 	
 });
 
