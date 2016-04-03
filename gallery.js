@@ -48,17 +48,12 @@ function swapPhoto() {
 	//Access the img element and replace its source
 	//with a new image from your images array which is loaded 
 	//from the JSON string
-	
-	$('#details').attr('location','Location: ' + mImages[mCurrentIndex].location)
-	$('#details').attr('description','Description: ' + mImages[mCurrentIndex].description)
-	$('#date').text('Date: ' + mImages[mCurrentIndex].date)
-	
 	console.log('swap photo');
 }
 
 function setDetails(){
-	$('#details').attr('location','Location: ' + mImages[mCurrentIndex].location)
-	$('#details').attr('description','Description: ' + mImages[mCurrentIndex].description)
+	$('.location').text('Location: ' + mImages[mCurrentIndex].location)
+	$('.description').text('Description: ' + mImages[mCurrentIndex].description)
 	$('.date').text('Date: ' + mImages[mCurrentIndex].date)
 }
 
