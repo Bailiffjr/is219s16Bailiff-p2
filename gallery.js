@@ -118,7 +118,7 @@ window.addEventListener('load', function() {
 }, false);
 
 $( "#moreIndicator" ).click(function() {
-  $('.details').eq(0).hide();
+  $('.details').eq(0).toggle();
 });
 
 function GalleryImage(location , description, date, img) {
