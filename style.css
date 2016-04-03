@@ -36,7 +36,7 @@ body {
 	opacity: .8;
 	margin: auto;
 	bottom:50%;
-	right:50%;
+	align: center;
 }
 
 .thumbnail {
