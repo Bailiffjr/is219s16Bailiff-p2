@@ -61,10 +61,10 @@ body {
 }
 
 #nextPhoto {
-	position: absolute;
+	position: relative;
 	height: 42px;
 	width: 42px;
-	right:100%;
+	left:100%;
 	margin: auto;
 	bottom:0px;
 }
