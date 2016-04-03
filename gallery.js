@@ -87,7 +87,7 @@ mRequest.onreadystatechange = function() {
 			// Let’s print out the JSON; It will likely show as “obj” 
 			console.log(mJson.images.length);
 		} catch(err) { 
-		//	console.log(err.message) 
+			console.log(err.message) 
 		} 
 	} 
 };
@@ -106,7 +106,7 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 $(document).ready( function() {
 	
 	// This initially hides the photos' metadata information
-	//$('.details').eq(0).hide();
+	$('.details').eq(0).hide();
 	
 	
 });
