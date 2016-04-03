@@ -51,7 +51,7 @@ body {
 
 #prevPhoto {
 	height: 42px;
-	width: 42px;
+	width: 50%;
 }
 
 #nextPhoto {
