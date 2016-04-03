@@ -34,6 +34,7 @@ body {
 	position: absolute;
 	z-index: 3;
 	opacity: .8;
+	left: 50%;
 	margin: 0 auto;
 	bottom:20%;
 }
