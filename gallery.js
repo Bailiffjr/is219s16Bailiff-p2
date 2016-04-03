@@ -106,8 +106,11 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 $(document).ready( function() {
 	
 	// This initially hides the photos' metadata information
-	$('.details').eq(0).hide();
-	
+//	$('.details').eq(0).hide();
+	$('img#moreIndicator').click (function() {
+  $('.details').eq(0).slideToggle("slow");
+});
+
 	
 });
 
