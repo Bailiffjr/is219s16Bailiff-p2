@@ -61,9 +61,12 @@ body {
 }
 
 #nextPhoto {
+	position: absolute;
 	height: 42px;
 	width: 42px;
 	right:100%;
+	margin: auto;
+	bottom:0px;
 }
 
 .details p {
