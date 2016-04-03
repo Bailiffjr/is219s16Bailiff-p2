@@ -69,10 +69,10 @@ mRequest.onreadystatechange = function() {
 			mJson = JSON.parse(mRequest.responseText);
 			// LOOP THROUGH the mJSON array here and fill up the 
 			// mImages array with GalleryImage objects
-		//	for(var x = 0; x > mJson.images.length;x++){
-		//		mImages[].push(new GalleryImage(mJson.images[x].imgLocation,mJson.images[x].description, mJson.images[x].date, mJson.images[x].imgPath));
-		//		console.log(mImages[x].img);
-	//		}
+			for(var x = 0; x < mJson.images.length;x++){
+				mImages[].push(new GalleryImage(mJson.images[x].imgLocation,mJson.images[x].description, mJson.images[x].date, mJson.images[x].imgPath));
+				//console.log(mImages[x].img);
+			}
 			// Let’s print out the JSON; It will likely show as “obj” 
 			console.log(mJson.images.length);
 		} catch(err) { 
