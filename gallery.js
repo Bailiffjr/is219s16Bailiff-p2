@@ -106,10 +106,10 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 $(document).ready( function() {
 	
 	// This initially hides the photos' metadata information
-//	$('.details').eq(0).hide();
-//	$('.moreIndicator').click (function() {
-//  $('.details').eq(0).slideToggle("slow");
-//});
+	$('.details').eq(0).hide();
+	$('.moreIndicator').click (function() {
+  $('.details').eq(0).slideToggle("slow");
+});
 
 	
 });
@@ -120,9 +120,7 @@ window.addEventListener('load', function() {
 
 }, false);
 
-$('.moreIndicator').click (function() {
-  $('.details').eq(0).slideToggle("slow");
-});
+
 
 function GalleryImage(location , description, date, img) {
 	//implement me as an object to hold the following data about an image:
