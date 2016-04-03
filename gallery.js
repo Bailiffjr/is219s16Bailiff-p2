@@ -59,7 +59,8 @@ var mJson;
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
 var mUrl = "images.json";
 
-
+mRequest.open("GET",mURL, true); 
+mRequest.send();
 
 mRequest.onreadystatechange = function() { 
 	// Do something interesting if file is opened successfully 
@@ -80,8 +81,7 @@ mRequest.onreadystatechange = function() {
 	} 
 };
 
-mRequest.open("GET",mURL, true); 
-mRequest.send();
+
 
 
 //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
