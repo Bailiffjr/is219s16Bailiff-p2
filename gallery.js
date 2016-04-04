@@ -110,7 +110,7 @@ $(document).ready( function() {
 	
 	$('.moreIndicator').click (function() {
 		  $('.details').eq(0).slideToggle("slow");
-		  if($(".moreIndicator").hasClass("rot270")){
+		  if($('.moreIndicator').hasClass('rot270')){
 		  	$('.moreIndicator').removeClass('rot270');
 		  	$('.moreIndicator').addClass('rot90');
 		  	//$(".moreIndicator").rot90;
