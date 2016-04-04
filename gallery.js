@@ -112,7 +112,8 @@ $(document).ready( function() {
 });
 
 $('.prevPhoto').click (function() {
-  	
+  	mCurrentIndex -= 2;
+  	swapPhoto();
 });
 
 $('.nextPhoto').click (function() {
