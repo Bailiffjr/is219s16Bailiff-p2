@@ -107,18 +107,28 @@ $(document).ready( function() {
 	
 	// This initially hides the photos' metadata information
 	$('.details').eq(0).hide();
+	
 	$('.moreIndicator').click (function() {
-  $('.details').eq(0).slideToggle("slow");
-});
+		  $('.details').eq(0).slideToggle("slow");
+		  if($(".moreIndicator").hasClass("rot270")){
+		  	$(".moreIndicator").removeClass("rot270");
+		  	$(".moreIndicator").addClass("rot90");
+		  	$(".moreIndicator").rot90;
+		  }else{
+		  	$(".moreIndicator").removeClass("rot90");
+		  	$(".moreIndicator").addClass("rot270");
+		  	$(".moreIndicator").rot270;
+		  }
+	});
 
-$('#prevPhoto').click (function() {
-  	mCurrentIndex -= 2;
-  	swapPhoto();
-});
+	$('#prevPhoto').click (function() {
+  		mCurrentIndex -= 2;
+  		swapPhoto();
+	});
 
-$('#nextPhoto').click (function() {
-  	swapPhoto();
-});
+	$('#nextPhoto').click (function() {
+  		swapPhoto();
+	});
 	
 });
 
