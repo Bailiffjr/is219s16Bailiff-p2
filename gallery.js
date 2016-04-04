@@ -113,11 +113,11 @@ $(document).ready( function() {
 		  if($(".moreIndicator").hasClass("rot270")){
 		  	$(".moreIndicator").removeClass("rot270");
 		  	$(".moreIndicator").addClass("rot90");
-		  	$(".moreIndicator").rot90;
+		  	//$(".moreIndicator").rot90;
 		  }else{
 		  	$(".moreIndicator").removeClass("rot90");
 		  	$(".moreIndicator").addClass("rot270");
-		  	$(".moreIndicator").rot270;
+		  	//$(".moreIndicator").rot270;
 		  }
 	});
 
