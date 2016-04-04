@@ -117,7 +117,7 @@ $(document).ready( function() {
 		  }else{
 		  	$('.moreIndicator').removeClass('rot90');
 		  	$('.moreIndicator').addClass('rot270');
-		  	//$(".moreIndicator").rot270;
+		  	$(".moreIndicator").rot270;
 		  }
 	});
 
