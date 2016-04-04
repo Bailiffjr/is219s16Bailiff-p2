@@ -111,12 +111,12 @@ $(document).ready( function() {
   $('.details').eq(0).slideToggle("slow");
 });
 
-$('.prevPhoto').click (function() {
+$('#prevPhoto').click (function() {
   	mCurrentIndex -= 2;
   	swapPhoto();
 });
 
-$('.nextPhoto').click (function() {
+$('#nextPhoto').click (function() {
   	swapPhoto();
 });
 	
