@@ -111,6 +111,13 @@ $(document).ready( function() {
   $('.details').eq(0).slideToggle("slow");
 });
 
+$('.prevPhoto').click (function() {
+  	
+});
+
+$('.nextPhoto').click (function() {
+  	swapPhoto();
+});
 	
 });
 
